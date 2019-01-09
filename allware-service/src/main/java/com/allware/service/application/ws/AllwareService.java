@@ -53,19 +53,23 @@ public class AllwareService implements Serializable {
     */
     public void testLinkedList (){
         LOGGER.info("entrando al metodo testLinkedList");
-        LinkedList list = new LinkedList<Integer>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(5);
-        list = new LinkedList<String>();
-        list.add("aa");
-        list.add("bb");
-        list.add("cc");
-        list.add("dd");
-        list.add("dd");
-        System.out.println(list.see(1));
+        try {
+            LinkedList list = new LinkedList<Integer>();
+            list.add(1);
+            list.add(2);
+            list.add(3);
+            list.add(4);
+            list.add(5);
+            list = new LinkedList<String>();
+            list.add("aa");
+            list.add("bb");
+            list.add("cc");
+            list.add("dd");
+            list.add("dd");
+            System.out.println(list.see(1));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         LOGGER.info("saliendo del metodo testLinkedList");
     }
 }

@@ -1,12 +1,18 @@
 package com.allware.service.application.ws;
 
 import java.io.Serializable;
+import java.util.logging.Logger;
 
 /**
  * nodo de lista generic
  * @param <E>
  */
 public class Nodo<E> implements Serializable {
+    /**
+     * Nombre : LOGGER.
+     * Descripcion : LOGGER de la clase.
+     */
+    private static final Logger LOGGER = Logger.getLogger(Nodo.class.getName());
     /**
      * proximo nodo.
      */
@@ -30,7 +36,15 @@ public class Nodo<E> implements Serializable {
      * @return proximo nodo.
      */
     Nodo seeNext() {
-        return this.next;
+        LOGGER.info("entrando al metodo seeNext");
+        Nodo nodo= null;
+        try {
+            nodo =  this.next;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        LOGGER.info("saliendo del metodo seeNext");
+        return nodo;
     }
 
     /**
@@ -38,7 +52,13 @@ public class Nodo<E> implements Serializable {
      * @param n
      */
     void add(Nodo n){
-        this.next = n;
+        LOGGER.info("entrando del metodo add");
+        try {
+            this.next = n;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        LOGGER.info("saliendo del metodo add");
     }
 
     /**
@@ -46,6 +66,14 @@ public class Nodo<E> implements Serializable {
      * @return
      */
     Object seeData() {
-        return this.data;
+        LOGGER.info("entrando del metodo seeData");
+        Object data = null;
+        try {
+            data = this.data;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        LOGGER.info("saliendo del metodo seeData");
+        return data;
     }
 }

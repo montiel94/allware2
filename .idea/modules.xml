@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/allware.iml" filepath="$PROJECT_DIR$/allware.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allware-service/service.iml" filepath="$PROJECT_DIR$/allware-service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allware-view/view.iml" filepath="$PROJECT_DIR$/allware-view/view.iml" />
+    </modules>
+  </component>
+</project>

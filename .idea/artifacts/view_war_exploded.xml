@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="view:war exploded">
+    <output-path>$PROJECT_DIR$/allware-view/target/allware-view</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="view" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.webjars:bootstrap:4.1.1" />
+          <element id="library" level="project" name="Maven: org.webjars:jquery:3.0.0" />
+          <element id="library" level="project" name="Maven: org.webjars:popper.js:1.14.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/allware-view/target/allware-view/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="view/web/Web" />
+    </root>
+  </artifact>
+</component>
